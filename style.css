@@ -1,0 +1,100 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: monospace;
+    font-size: 18px;
+    background: #141714;
+    color: aliceblue;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background: url(https://www.einerd.com.br/wp-content/uploads/2024/06/ben-10-movies-e1719207189917-890x445.jpg) no-repeat; */
+}
+.benioimg {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    opacity: 0.3;
+}
+
+a {
+    color: greenyellow;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+nav {
+    background-color: #1c3b06;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7vh;
+    padding: 0px 120px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    letter-spacing: 1.5px;
+}
+
+.meusite {
+    font-size: 21px;
+    /* opacity: 0; */
+    width: 0px;
+    /* height: 25px; */
+    overflow: hidden;
+    transition: ease 0.5s;
+    left: 125px;
+}
+
+a:hover {
+    color: #000000;
+    font-size: 22px;
+}
+
+.logo {
+    height: 50px;
+    box-shadow: 0 0 4px #6aff00;
+    border-radius: 50%;
+    transition: 0.4s;
+    position: absolute;
+    left: 100px;
+}
+
+.logo:hover {
+    left: 80px;
+}
+
+.log {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    
+}
+
+.log:hover {
+    gap: 10px;
+}
+
+.log:hover .meusite {
+    width: 60px;
+    margin: 10px;
+    
+}
+
+.bendez {
+    margin: 30px;
+    font-size: 70px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 30px;
+    
+}
