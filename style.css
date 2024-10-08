@@ -47,6 +47,7 @@ nav {
     height: 7vh;
     padding: 0px 120px;
     z-index: 1;
+    box-shadow: 0 0 20px #00000087;
 }
 
 
