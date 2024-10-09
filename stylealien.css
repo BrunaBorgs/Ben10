@@ -6,7 +6,7 @@
 body {
     font-family: monospace;
     font-size: 18px;
-    background: linear-gradient(to right, #141714, #0f2701);
+    background: linear-gradient(to right, #407134, #0f2701);
     /* background-image: url(https://www.einerd.com.br/wp-content/uploads/2024/06/ben-10-movies-e1719207189917-890x445.jpg), url(https://cdn.europosters.eu/image/1300/posters/ben-10-warp-i3549.jpg); */
     /* background-repeat: no-repeat;
     background-size: 100vw 100vh;
@@ -116,31 +116,52 @@ a:hover {
     z-index: 1;
 }
 .imgposter {
-    height: 200px;
-    width: 250px;
+    height: 170px;
+    width: 220px;
     border-radius: 12px;
     box-shadow: 0 0 4px #6aff00;
     z-index: 1;
+    margin: 0px 0px 0px 0px;
 }
 .beniocor {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 60px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0px;
     text-align: center;
     align-items: center;
     margin-bottom: 30px;
+    margin: 0px 27px 0px 27px;
     z-index: 1;
 }
 .benioinside {
     transition: 0.3s;
+    margin: 10px 10px 10px 10px;
+    position: relative;
+    overflow: hidden;
 }
-
-.benioinside:hover{
-    transform: scale(1.1);
+.benioinside:hover::after  {
+    opacity: 1;
+}
+.benioinside::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #1b271278, #3c791179);
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    opacity: 0;
+    transition: 0.3s;
     
 }
-.benioiside:hover .beniodez {
-    color: #6aff00;
-    text-shadow: #6aff00;
-    letter-spacing: 10px;
+
+
+.benioinside:hover{
+    /* transform: scale(1.1); */
+    margin-top: 25px;
+    /* background: linear-gradient(to bottom, #1b2712, #3c7911); */
+    box-shadow: 0 0 4px #000000;
+    border-radius: 14px;
+
 }
