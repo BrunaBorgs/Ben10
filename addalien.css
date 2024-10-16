@@ -1,0 +1,237 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: monospace;
+    font-size: 18px;
+    background: linear-gradient(to right, #141714, #2f7208);
+    /* background-image: url(https://www.einerd.com.br/wp-content/uploads/2024/06/ben-10-movies-e1719207189917-890x445.jpg), url(https://cdn.europosters.eu/image/1300/posters/ben-10-warp-i3549.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-position: 0px 55px, 0px 105vh; */
+    color: aliceblue;
+}
+.overlay {
+    position: absolute;
+    top: 55px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #141714de;
+    z-index: 0;
+    height: 198vh;
+    pointer-events: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* display: grid;
+    place-items: center;
+    justify-content: center;
+    align-items: center; */
+    z-index: 1;
+}
+
+a {
+    color: greenyellow;
+    text-decoration: none;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+nav {
+    background: linear-gradient(to left, #1b2712, #3c7911);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7vh;
+    padding: 0px 120px;
+    z-index: 1;
+    box-shadow: 0 0 20px #00000087;
+}
+
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    letter-spacing: 1.5px;
+    z-index: 1;
+}
+
+.meusite {
+    font-size: 21px;
+    /* opacity: 0; */
+    width: 0px;
+    /* height: 25px; */
+    overflow: hidden;
+    transition: ease 0.5s;
+    left: 125px;
+    z-index: 1;
+}
+
+a:hover {
+    color: #fbff00;
+    letter-spacing: 6px;
+    font-weight: bold;
+    text-shadow: 0 0 4px #6aff00;
+}
+
+.logo {
+    height: 50px;
+    box-shadow: 0 0 4px #6aff00;
+    border-radius: 50%;
+    transition: 0.4s;
+    position: absolute;
+    left: 100px;
+    z-index: 2;
+}
+
+.logo:hover {
+    left: 80px;
+}
+
+.log {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+}
+
+.log:hover {
+    gap: 10px;
+}
+
+.log:hover .meusite {
+    width: 60px;
+    margin: 10px;
+}
+
+.bendez {
+    margin: 10px;
+    font-size: 70px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 5px;
+    text-shadow: 0 0 8px #6aff00;
+    transition: 0.3s;
+    z-index: 1;
+    animation: text 1s infinite alternate-reverse;
+}
+.bendez:hover {
+    letter-spacing: 19px;
+    color: #6aff00;
+}
+.container_input {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #88b96431;
+    width: 900px;
+    height: 500px;
+    border-radius: 10px;
+}
+#quiz {
+    box-shadow: 0 0 10px #0000008d;
+    /* width: 300px; */
+    text-align: center;
+    display: grid;
+    place-items: center;
+
+    margin-top: 30px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    background: #88b96431;
+    width: 620px;
+    height: 570px;
+    border-radius: 10px;
+    animation: teste 1s infinite alternate-reverse;
+}
+/* .inp {
+    margin-bottom: 10px;
+} */
+input:focus {
+    border-color: #6aff00;
+    outline: none;
+    box-shadow: 0 0 5px #6aff00;
+}
+input {
+    width: 450px;
+    margin: 7px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    /* box-shadow: 0 0 5px #00000067; */
+    font-size: 20px;
+    padding: 8px;
+}
+#quiz-form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+button {
+    width: 120px;
+    height: 50px;
+    font-size: 17px;
+    border-radius: 10px;
+    border: none;
+    background: #3f8719;
+    transition: 0.2s;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    /* z-index: 2; */
+}
+button:hover {
+    background: #6aff00;
+    transform: scale(1.1);
+    letter-spacing: 1px;
+}
+@keyframes teste{
+    0% {
+        box-shadow: 0 0 10px #1b2712;
+    }
+    100% {
+        box-shadow: 0 0 10px #6aff00;
+    }
+}
+@keyframes text {
+    0% {
+        margin: 10px;
+        font-size: 70px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        letter-spacing: 5px;
+        text-shadow: 0 0 8px #6aff00;
+        transition: 0.3s;
+        z-index: 1;
+    }
+    100% {
+        letter-spacing: 19px;
+        color: #6aff00;
+    }
+}
+
+.gifcontainer {
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    background-image: url(/assets/gifomn.gif);
+    position: absolute;
+    top: 580px;
+    /* z-index: 1; */
+    /* background-image: url(/assets/static.png); */
+    transition: 0.3s;
+}
+/* .gifcontainer:hover {
+    background-image: url(/assets/gifomn.gif);
+} */
+.button:hover .gifcontainer {
+    transform: scale(2);
+}
