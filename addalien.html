@@ -55,10 +55,17 @@
     </main>
     <script>
         function enviar() {
+            console.log('Adicionando Alien')
             const nome = document.querySelector('input[name="nomealien"]').value
-            console.log(nome)
-            document.querySelector('.lista').innerHTML += (nome)
-            console.log('limpando o formulário')
+            // document.querySelector('.lista').innerHTML += (nome)
+            const urlimg = document.querySelector('input[name="urlimg"]').value
+            // document.querySelector('.lista').innerHTML += (urlimg)
+
+            const alien = `<li> <p>Nome: ${nome}</p> <p>Imagem: ${urlimg}</p> </li>`
+            console.log(alien)        
+
+            const listaaliens = document.querySelector('.lista')
+            listaaliens.innerHTML = listaaliens.innerHTML + alien
             // document.querySelector('input[name="nomealien"]').value = ''
             // document.querySelector('input[name="urlimg"]').value = ''
         }
