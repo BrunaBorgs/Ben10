@@ -307,4 +307,111 @@ footer {
     }
 }
 
+@media (max-width: 768px){
+    body {
+        font-family: monospace;
+        font-size: 18px;
+        background: #141714;
+        background-image: url(https://www.einerd.com.br/wp-content/uploads/2024/06/ben-10-movies-e1719207189917-890x445.jpg), url(https://cdn.europosters.eu/image/1300/posters/ben-10-warp-i3549.jpg);
+        background-repeat: no-repeat;
+        background-size: 400vw;
+        background-position: 0px 55px, 0px 105vh;
+        color: aliceblue;
+    }
+    .overlay {
+        position: absolute;
+        top: 55px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #141714de;
+        z-index: 0;
+        width: 400vw;
+        height: 230vh;
+        pointer-events: none;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 1;
+    }
+    .bendez {
+        /* margin: 30px; */
+        font-size: 200px;
+        margin-left: 270vw;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        letter-spacing: 5px;
+        text-shadow: 0 0 8px #6aff00;
+        transition: 0.3s;
+        z-index: 1;
+        animation: bendez 1s infinite alternate-reverse;
+    }
+    .bendez:hover {
+        letter-spacing: 19px;
+        color: #6aff00;
+    }
+    .beniotxt {
+        width: 900px;
+        text-align: center;
+        letter-spacing: 1px;
+        /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+        z-index: 1;
+    }
+    
+    .beniodez {
+        margin: 10px;
+        font-size: 40px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        letter-spacing: 2px;
+        z-index: 1;
+    }
+    .beniodezs {
+        margin-bottom: 25px;
+        font-size: 50px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        letter-spacing: 2px;
+        z-index: 1;
+    }
+    .imgposter {
+        height: 350px;
+        width: 400px;
+        border-radius: 14px;
+        box-shadow: 0 0 4px #6aff00;
+        z-index: 1;
+    }
+    .beniocor {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 30px;
+        z-index: 1;
+    }
+    .beniocor2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+        align-items: center;
+        z-index: 1;
+    }
+    footer {
+        margin: 80px 0px 15px 0px;
+        text-shadow: 0 0 4px #6aff00;
+        z-index: 1;
+    }
+    .benioinside {
+        transition: 0.3s;
+    }
+    
+    .benioinside:hover {
+        transform: scale(1.1);
+    }
+    .benioiside:hover .beniodez {
+        color: #6aff00;
+        text-shadow: #6aff00;
+    }
+}
+
 
